@@ -10,9 +10,9 @@ const Banner = () => {
             <input
               type="text"
               placeholder="Search here...."
-              className="input w-11/12 md:w-full max-w-md text-[#0B0B0B66]"
+              className="input md:w-full max-w-md text-[#0B0B0B66]"
             />
-            <button className="md:py-3 md:px-5 bg-[#FF444A] rounded-r-lg text-white absolute -ml-20 md:-ml-32">
+            <button className="py-3 md:py-3 md:px-5 bg-[#FF444A] rounded-r-lg text-white absolute -ml-[88px] md:-ml-32">
               Get Started
             </button>
           </div>
