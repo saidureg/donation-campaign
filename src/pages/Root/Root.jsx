@@ -1,6 +1,12 @@
+import { Outlet } from "react-router-dom";
 import "./Root.css";
+
 const Root = () => {
-  return <div>Root</div>;
+  return (
+    <div>
+      <Outlet></Outlet>
+    </div>
+  );
 };
 
 export default Root;

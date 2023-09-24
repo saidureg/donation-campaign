@@ -1,0 +1,25 @@
+const Banner = () => {
+  return (
+    <div>
+      <div className="hero-content text-center text-neutral-content h-[70vh]">
+        <div>
+          <h1 className="mb-8 text-5xl text-[#0B0B0B] font-bold">
+            I Grow By Helping People In Need
+          </h1>
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search here...."
+              className="input w-11/12 md:w-full max-w-md text-[#0B0B0B66]"
+            />
+            <button className="md:py-3 md:px-5 bg-[#FF444A] rounded-r-lg text-white absolute -ml-20 md:-ml-32">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Banner;
