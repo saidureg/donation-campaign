@@ -43,19 +43,9 @@
     "description": "Contribute to our food bank to help combat hunger in our community. Your support ensures that families have access to nutritious meals. Hunger is a pressing issue in our community, and your donation can make a real impact. By supporting our food bank, you're helping us provide essential nourishment to families who are struggling to put food on their tables. Your contribution will enable us to source fresh produce, non-perishable items, and other essential food supplies to distribute to those in need. Together, we can alleviate hunger and ensure that no one goes to bed hungry.",
     "price": 400
   },
+
   {
     "id": 5,
-    "picture": "https://i.ibb.co/pfnS68s/Health.png",
-    "title": "Vaccination Drive",
-    "category": "Health",
-    "category_bg": "#0052FF33",
-    "card_bg_color": "#0052FF26",
-    "text_color": "#0052FF",
-    "description": "Support our vaccination drive to protect vulnerable populations from diseases. Your donation can help save lives and prevent outbreaks. Vaccinations are a critical tool in preventing the spread of diseases and saving lives. Your donation to our vaccination drive will support efforts to immunize vulnerable populations, including children, the elderly, and those with compromised immune systems. By contributing, you're ensuring that essential vaccines reach those who need them the most. Your support will help create a safer and healthier community for all.",
-    "price": 250
-  },
-  {
-    "id": 6,
     "picture": "https://i.ibb.co/wpd8m2V/Education.png",
     "title": "Digital Learning Initiative",
     "category": "Education",
@@ -65,19 +55,9 @@
     "description": "Bridge the digital divide in education by donating towards our digital learning initiative. Empower students with online education resources. In today's digital age, access to online education is essential for students to thrive academically. Unfortunately, not all students have the necessary resources. Your donation to our digital learning initiative will provide underprivileged students with access to online learning materials, including textbooks, educational apps, and internet connectivity. By contributing, you're empowering these students to excel in their studies and prepare for a brighter future. Join us in closing the digital divide and creating equal opportunities for all.",
     "price": 350
   },
+
   {
-    "id": 7,
-    "picture": "https://i.ibb.co/mRGjTkL/Clothing.png",
-    "title": "Back-to-School Clothes",
-    "category": "Clothing",
-    "category_bg": "#79C23F33",
-    "card_bg_color": "#79C23F26",
-    "text_color": "#79C23F",
-    "description": "Help kids start the school year right with new clothes. Your donation will boost their confidence and readiness to learn. Starting the school year with a new set of clothes can make a significant difference in a child's life. Your contribution to our back-to-school clothes drive will provide students from low-income families with the clothing they need to feel confident and ready to learn. By donating, you're giving these children the opportunity to focus on their education without the added stress of not having proper attire. Together, we can ensure that every child has a bright and successful school year.",
-    "price": 150
-  },
-  {
-    "id": 8,
+    "id": 6,
     "picture": "https://i.ibb.co/8dqBpr4/Food.png",
     "title": "Meals for the Homeless",
     "category": "Food",
@@ -88,29 +68,30 @@
     "price": 100
   },
   {
-    "id": 9,
+    "id": 7,
     "picture": "https://i.ibb.co/pfnS68s/Health.png",
-    "title": "Maternal Health Care",
+    "title": "Vaccination Drive",
     "category": "Health",
     "category_bg": "#0052FF33",
     "card_bg_color": "#0052FF26",
     "text_color": "#0052FF",
-    "description": "Support maternal health programs to ensure safe pregnancies and childbirth. Your donation can protect the health of mothers and infants. Every mother deserves access to quality healthcare during pregnancy and childbirth. Your contribution to our maternal health programs will provide essential prenatal and postnatal care to expectant mothers. By donating, you're ensuring safe pregnancies, healthy births, and the well-being of both mothers and infants. Join us in this vital mission to protect and nurture the next generation.",
-    "price": 550
+    "description": "Support our vaccination drive to protect vulnerable populations from diseases. Your donation can help save lives and prevent outbreaks. Vaccinations are a critical tool in preventing the spread of diseases and saving lives. Your donation to our vaccination drive will support efforts to immunize vulnerable populations, including children, the elderly, and those with compromised immune systems. By contributing, you're ensuring that essential vaccines reach those who need them the most. Your support will help create a safer and healthier community for all.",
+    "price": 250
   },
   {
-    "id": 10,
-    "picture": "https://i.ibb.co/wpd8m2V/Education.png",
-    "title": "STEM Education Grants",
-    "category": "Education",
-    "category_bg": "#FF444A33",
-    "card_bg_color": "#FF444A26",
-    "text_color": "#FF444A",
-    "description": "Promote STEM education by funding grants for science, technology, engineering, and math programs. Inspire the next generation of innovators. STEM (Science, Technology, Engineering, and Mathematics) education is crucial for innovation and progress. Your donation to our STEM education grants program will support students in pursuing STEM-related fields. By contributing, you're helping inspire the next generation of scientists, engineers, and innovators. Your support will fund educational opportunities, research projects, and resources that enable students to excel in STEM. Join us in shaping a brighter future through STEM education.",
-    "price": 400
+    "id": 8,
+    "picture": "https://i.ibb.co/mRGjTkL/Clothing.png",
+    "title": "Back-to-School Clothes",
+    "category": "Clothing",
+    "category_bg": "#79C23F33",
+    "card_bg_color": "#79C23F26",
+    "text_color": "#79C23F",
+    "description": "Help kids start the school year right with new clothes. Your donation will boost their confidence and readiness to learn. Starting the school year with a new set of clothes can make a significant difference in a child's life. Your contribution to our back-to-school clothes drive will provide students from low-income families with the clothing they need to feel confident and ready to learn. By donating, you're giving these children the opportunity to focus on their education without the added stress of not having proper attire. Together, we can ensure that every child has a bright and successful school year.",
+    "price": 150
   },
+
   {
-    "id": 11,
+    "id": 9,
     "picture": "https://i.ibb.co/mRGjTkL/Clothing.png",
     "title": "Winter Coat Drive",
     "category": "Clothing",
@@ -120,8 +101,21 @@
     "description": "Collect winter coats for those in need during the cold season. Your donation will keep individuals warm and protected from the chill. Winter can be a harsh and unforgiving season, especially for those without warm clothing. Your contribution to our winter coat drive will ensure that individuals facing the cold have access to warm coats, jackets, and other winter essentials. By donating, you're providing not just warmth but also a sense of security and well-being. Join us in making winter a little more bearable for those in need.",
     "price": 200
   },
+
   {
-    "id": 12,
+    "id": 10,
+    "picture": "https://i.ibb.co/pfnS68s/Health.png",
+    "title": "Maternal Health Care",
+    "category": "Health",
+    "category_bg": "#0052FF33",
+    "card_bg_color": "#0052FF26",
+    "text_color": "#0052FF",
+    "description": "Support maternal health programs to ensure safe pregnancies and childbirth. Your donation can protect the health of mothers and infants. Every mother deserves access to quality healthcare during pregnancy and childbirth. Your contribution to our maternal health programs will provide essential prenatal and postnatal care to expectant mothers. By donating, you're ensuring safe pregnancies, healthy births, and the well-being of both mothers and infants. Join us in this vital mission to protect and nurture the next generation.",
+    "price": 550
+  },
+
+  {
+    "id": 11,
     "picture": "https://i.ibb.co/8dqBpr4/Food.png",
     "title": "Community Kitchen Project",
     "category": "Food",
@@ -130,5 +124,17 @@
     "text_color": "#F87147",
     "description": "Support our community kitchen project, where we provide free meals to low-income families. Your contribution promotes food security. Many families struggle to put food on the table, especially during challenging times. Your donation to our community kitchen project will enable us to provide hot and nutritious meals to low-income families. By contributing, you're not only satisfying hunger but also promoting food security and well-being. Join us in making sure that no one in our community goes to bed hungry.",
     "price": 300
+  },
+
+  {
+    "id": 12,
+    "picture": "https://i.ibb.co/wpd8m2V/Education.png",
+    "title": "STEM Education Grants",
+    "category": "Education",
+    "category_bg": "#FF444A33",
+    "card_bg_color": "#FF444A26",
+    "text_color": "#FF444A",
+    "description": "Promote STEM education by funding grants for science, technology, engineering, and math programs. Inspire the next generation of innovators. STEM (Science, Technology, Engineering, and Mathematics) education is crucial for innovation and progress. Your donation to our STEM education grants program will support students in pursuing STEM-related fields. By contributing, you're helping inspire the next generation of scientists, engineers, and innovators. Your support will fund educational opportunities, research projects, and resources that enable students to excel in STEM. Join us in shaping a brighter future through STEM education.",
+    "price": 400
   }
 ]
