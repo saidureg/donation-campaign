@@ -10,18 +10,23 @@ const DonationCard = ({ donation }) => {
     text_color,
     category_bg,
   } = donation;
+
   return (
     <div>
       <Link to={`/donation/${id}`}>
         <div
-          className={`relative flex max-w-[24rem] flex-col rounded-xl bg-[${card_bg_color}] text-[${text_color}] bg-clip-border shadow-md`}
+          style={{ background: card_bg_color, color: text_color }}
+          className="relative flex max-w-[24rem] flex-col rounded-xl bg-clip-border shadow-md"
         >
           <div className="relative m-0 overflow-hidden rounded-t-xl bg-transparent bg-clip-border shadow-none">
             <img className="w-full" src={picture} alt={title} />
           </div>
           <div className="p-6">
             <h4 className="text-sm font-medium leading-snug tracking-normal antialiased">
-              <span className={`bg-[${category_bg}] py-2 px-3 rounded-md`}>
+              <span
+                style={{ background: category_bg }}
+                className="py-2 px-3 rounded-md"
+              >
                 {category}
               </span>
             </h4>
