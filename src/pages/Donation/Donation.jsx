@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getDonationCard } from "../../Utilites/localStorages";
+import DonatorDetails from "../../components/DonatorDetails/DonatorDetails";
 
 const Donation = () => {
-  const [donator, setDonator] = useState([]);
+  const [addDonator, setAddDonator] = useState([]);
 
   const donations = useLoaderData();
 
@@ -13,11 +14,19 @@ const Donation = () => {
       const donators = donations?.filter((donator) =>
         donatorIds.includes(donator.id)
       );
-      setDonator(donators);
+      setAddDonator(donators);
     }
   }, [donations]);
 
-  return <div>Donation</div>;
+  return (
+    <div>
+      <div className="grid lg:grid-cols-2 gap-6 my-20 px-3">
+        {addDonator.map((donator, idx) => (
+          <DonatorDetails key={idx} donator={donator}></DonatorDetails>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Donation;
