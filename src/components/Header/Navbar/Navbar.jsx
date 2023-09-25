@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center mt-6">
+    <div className="flex justify-between items-center mt-6 max-w-[1320px] mx-4 lg:mx-auto ">
       <Logo></Logo>
       <ul className="flex gap-4 md:gap-8">
         <li>
@@ -22,7 +22,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/donation"
+            to="/donations"
             className={({ isActive, isPending }) =>
               isPending
                 ? "text-[#0B0B0B]"

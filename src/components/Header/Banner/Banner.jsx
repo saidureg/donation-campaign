@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div>
+    <div className="max-w-[1320px] mx-auto">
       <div className="hero-content text-center text-neutral-content h-[70vh]">
         <div>
           <h1 className="mb-8 text-5xl text-[#0B0B0B] font-bold">

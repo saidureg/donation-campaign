@@ -9,13 +9,13 @@ const Home = () => {
   return (
     <div>
       <div
-        className="hero"
+        className="hero place-items-stretch"
         style={{
           backgroundImage: "url(banner.png)",
         }}
       >
         <div className="hero-overlay bg-[#FFFFFFF2]"> </div>
-        <div className="max-w-[1320px] mx-auto">
+        <div>
           <Navbar></Navbar>
           <Banner></Banner>
         </div>
