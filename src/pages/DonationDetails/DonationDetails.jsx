@@ -1,7 +1,9 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveDonationCard } from "../../Utilites/localStorages";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import {
+  getDonationCard,
+  saveDonationCard,
+} from "../../Utilites/localStorages";
+import swal from "sweetalert";
 
 const DonationDetails = () => {
   const donations = useLoaderData();
@@ -11,8 +13,22 @@ const DonationDetails = () => {
   const donation = donations?.find((donationId) => donationId.id === idInt);
 
   const handleStoreCard = () => {
+    const storedDonator = getDonationCard();
     saveDonationCard(idInt);
-    toast("Successfully donated", { autoClose: 2000 });
+    const isExist = storedDonator?.find((donatorId) => donatorId === idInt);
+    if (!isExist) {
+      swal(
+        "Thank you for your donation!",
+        "Your contribution is greatly appreciated.",
+        "success"
+      );
+    } else {
+      swal(
+        "Thank you for your support!",
+        "You have already made a donation.",
+        "info"
+      );
+    }
   };
 
   return (
@@ -39,7 +55,6 @@ const DonationDetails = () => {
           {donation?.description}
         </p>
       </div>
-      <ToastContainer></ToastContainer>
     </div>
   );
 };
