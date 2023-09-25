@@ -19,8 +19,7 @@ const Statistics = () => {
     <div className="container-fluid mb-3 flex justify-center my-24">
       <Chart
         type="pie"
-        width={500}
-        height={500}
+        className="w-[320px] md:w-[420px] lg:w-[520px]"
         series={totalDonation}
         options={{
           noData: { text: "Empty Data" },
