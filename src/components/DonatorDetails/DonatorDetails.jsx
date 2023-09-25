@@ -2,11 +2,23 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const DonatorDetails = ({ donator }) => {
-  const { picture, title, category, price } = donator;
+  const {
+    id,
+    picture,
+    title,
+    category,
+    price,
+    category_bg,
+    card_bg_color,
+    text_color,
+  } = donator;
   return (
     <div>
-      <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-        <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+      <div
+        style={{ background: card_bg_color }}
+        className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-clip-border shadow-md"
+      >
+        <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-clip-border">
           <img
             src={picture}
             alt={title}
@@ -14,18 +26,27 @@ const DonatorDetails = ({ donator }) => {
           />
         </div>
         <div className="p-6">
-          <h6 className="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
-            {category}
+          <h6 className="mb-4 text-sm leading-relaxed tracking-normal antialiased">
+            <span
+              style={{ background: category_bg, color: text_color }}
+              className="py-2 px-3 rounded-md"
+            >
+              {category}
+            </span>
           </h6>
-          <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+          <h4 className="mb-2 text-2xl text-[#0B0B0B] font-semibold leading-snug tracking-normal antialiased">
             {title}
           </h4>
-          <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-            ${price}
+          <p
+            style={{ color: text_color }}
+            className="mb-8 font-semibold leading-relaxed antialiased"
+          >
+            ${price}.00
           </p>
-          <Link>
+          <Link to={`/donation/${id}`}>
             <button
-              className="rounded-lg text-xs font-bold uppercase"
+              style={{ background: text_color }}
+              className="rounded-lg py-3 px-4 text-white text-lg font-semibold uppercase"
               type="button"
             >
               View Details
