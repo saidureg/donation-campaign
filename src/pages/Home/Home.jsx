@@ -59,7 +59,7 @@ const Home = () => {
           {/* banner section end */}
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 my-12 max-w-[1320px] mx-auto px-5 lg:px-0">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 my-16 max-w-[1320px] mx-auto px-5 lg:px-0">
         {isClick
           ? filterCategoryCard.map((donation, idx) => (
               <DonationCard key={idx} donation={donation}></DonationCard>
