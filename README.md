@@ -6,7 +6,7 @@ Welcome to the Donation Campaign project! This web application allows users to v
 ## Features
 
 ### 1. Search and Filter Donations
-   - Users can easily search for donations using keywords.The search results can be filtered by category
+   - Users can easily search for donations using category keywords.Search results can be filtered by category.
 
 ### 2. Donation Details
    - Users can view detailed information by clicking on a specific donation.
