@@ -1,27 +1,23 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../../components/Header/Navbar/Navbar";
 import DonationCard from "../../components/DonationCard/DonationCard";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const Home = () => {
-  const [inputCategoryValue, setInputCategoryValue] = useState("");
   const [filterCategoryCard, setFilterCategoryCard] = useState([]);
   const [isClick, setIsClick] = useState(false);
 
   const donations = useLoaderData();
-
-  const handleSearch = (e) => {
-    setInputCategoryValue(e.target.value);
-  };
+  const inputRef = useRef(null);
 
   const handleSearchBnt = () => {
     setIsClick(true);
+    const inputValue = inputRef.current.value.trim().toLowerCase();
     const filterDonationCategory = donations.filter(
-      (donation) =>
-        donation.category.toLowerCase() === inputCategoryValue.toLowerCase()
+      (donation) => donation.category.toLowerCase() === inputValue
     );
     setFilterCategoryCard(filterDonationCategory);
-    setInputCategoryValue("");
+    inputRef.current.value = "";
   };
 
   return (
@@ -45,7 +41,7 @@ const Home = () => {
                 </h1>
                 <div className="relative">
                   <input
-                    onChange={handleSearch}
+                    ref={inputRef}
                     type="text"
                     placeholder="Search here...."
                     className="input w-11/12 md:w-full max-w-md text-[#0B0B0B66]"
